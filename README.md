@@ -1,2 +1,2 @@
 # bachproef-poc
-This repository contains all the necessary files to recreate the PoC environment using VirtualBox
+Deze repository bevat alle benodigde bestanden om de PoC omgeving te reproduceren met behulp van VirtualBox en Vagrant.
