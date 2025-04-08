@@ -18,4 +18,19 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 3. Clone de repository `https://github.com/matthiasdebaere/bachproef-poc.git`.
 4. Navigeer naar `bachproef-poc/src/` en open een terminal.
 5. Voer `vagrant cloud auth login` uit en log in.
-6. Voer `vagrant up` uit.  
+6. Voer `vagrant up` uit.
+
+# Post-installatie
+## Inloggen op de VMs
+Standaard logingegevens:
+- **Gebruikersnaam:** `vagrant`  
+- **Wachtwoord:** `vagrant`
+
+## Bereikbare diensten
+Na het opstarten van de omgeving zijn de volgende services beschikbaar:
+
+| Dienst           | IP-adres       |
+|------------------|----------------|
+| **Eve-NG**        | http://192.168.56.55  |
+| **Ansible AWX**   | http://192.168.56.60  |
+| **NetBox**        | http://192.168.56.65:8000  |
