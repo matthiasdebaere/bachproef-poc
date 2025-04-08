@@ -16,8 +16,7 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 
 ## Vagrant  
 1. Download en installeer [Vagrant](https://www.vagrantup.com/).
-2. Clone de repository:  
-   `https://github.com/matthiasdebaere/bachproef-poc.git`  
+2. Clone de repository `https://github.com/matthiasdebaere/bachproef-poc.git`.
 3. Navigeer naar `bachproef-poc/src/` en open een terminal.
 4. Voer `vagrant cloud auth login` uit en log in.
 6. Voer `vagrant up` uit.  
