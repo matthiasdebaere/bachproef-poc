@@ -11,10 +11,15 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 1. Download en installeer VirtualBox (versie 7.0.20):  
    [https://www.virtualbox.org/wiki/Download_Old_Builds_7_0](https://www.virtualbox.org/wiki/Download_Old_Builds_7_0)
 
+## HashiCorp Cloud Platform
+1. Maak een account op [https://portal.cloud.hashicorp.com/sign-up](https://portal.cloud.hashicorp.com/sign-up).
+> ⚠️ Let op: De Vagrant box images staan in een privérepository op HashiCorp. Je hebt daarom een account nodig en moet expliciet toegang krijgen tot mijn repository voordat je ze kunt gebruiken in de volgende stap.  
+
 ## Vagrant  
 1. Download en installeer Vagrant:  
    [https://www.vagrantup.com/](https://www.vagrantup.com/)  
 2. Clone de repository:  
    `https://github.com/matthiasdebaere/bachproef-poc.git`  
-3. Navigeer naar `bachproef-poc/src/` en open een terminal.  
-4. Voer `vagrant up` uit.  
+3. Navigeer naar `bachproef-poc/src/` en open een terminal.
+4. Voer `vagrant cloud auth login` uit en log in met je HashiCorp Cloud Platform account.
+6. Voer `vagrant up` uit.  
