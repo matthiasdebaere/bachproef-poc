@@ -12,7 +12,7 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 
 ## HashiCorp
 1. Maak een account op [HashiCorp Cloud Platform](https://portal.cloud.hashicorp.com/sign-up).
-> ⚠️ **Let op**: De Vagrant box images staan in een privérepository op HashiCorp. Je hebt daarom een account nodig en moet expliciet toegang krijgen tot mijn repository voordat je ze kunt gebruiken in de volgende stap.  
+> ⚠️ **Let op**: De Vagrant boxes staan in een privérepository op HashiCorp. Je hebt daarom een account nodig en moet expliciet toegang krijgen tot mijn repository voordat je ze kunt gebruiken in de volgende stap.  
 
 ## Vagrant  
 1. Download en installeer [Vagrant](https://www.vagrantup.com/).
