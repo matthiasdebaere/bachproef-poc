@@ -4,8 +4,8 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 # Installatie
 ## Prerequisites
 1. Schakel virtualisatie in via UEFI (BIOS).  
-2. Schakel Core Isolation uit in Windows.
-3. Schakel Hyper-V uit via `bcdedit /set hypervisorlaunchtype off` (in powershell).
+2. Schakel Core Isolation uit in Windows Defender.
+3. Schakel Hyper-V uit via `bcdedit /set hypervisorlaunchtype off` in powershell.
 
 ## VirtualBox    
 1. Download en installeer [VirtualBox (versie 7.0.20)](https://www.virtualbox.org/wiki/Download_Old_Builds_7_0).
