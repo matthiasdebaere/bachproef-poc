@@ -1,8 +1,7 @@
-> [!CAUTION]
-> **Vagrant Boxes worden pas maandag 19/05/2025 geüpload op Belnet.** 
-
 # bachproef-poc
 Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te reproduceren met behulp van VirtualBox en Vagrant op een Windows toestel.
+> [!CAUTION]
+> **Vagrant Boxes worden pas maandag 19/05/2025 geüpload op Belnet.** 
 
 # Installatie
 ## Prerequisites
