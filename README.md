@@ -21,8 +21,8 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 ## Logingegevens
 Standaard logingegevens:
 - **Gebruikersnaam:** `vagrant`  
-- **Wachtwoord:** `vagrant`
-Eve-NG webinterface:
+- **Wachtwoord:** `vagrant`  
+Eve-NG (webinterface) logingegevens:
 - **Gebruikersnaam:** `admin`  
 - **Wachtwoord:** `eve`
 
