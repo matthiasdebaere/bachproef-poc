@@ -56,7 +56,7 @@ Na het opstarten van de omgeving zijn de volgende services beschikbaar:
 
 1. Log eerst in op **Eve-NG** (usr: `admin`, pwd: `eve` en selecteer `Html5 console`) om de gevirtualiseerde netwerkomgeving op te starten.
 2. Log vervolgens in op **Ansible AWX** en voer de gewenste playbooks uit.
-3. De webinterfaces van de firewalls zijn te bereiken via:
+3. De webinterfaces van de firewalls zijn bereikbaar op:
    - **Firewall‑A:** `https://192.168.56.70`
    - **Firewall‑B:** `https://192.168.56.75`
 4. Voor de switches open je best een nieuw consolevenster vanuit Eve-NG (op voorwaarde dat je met de `Html5 console` hebt ingelogd).
