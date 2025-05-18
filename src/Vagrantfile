@@ -1,0 +1,67 @@
+HOST_ONLY_NETWORK = "VirtualBox Host-Only Ethernet Adapter"
+
+Vagrant.configure("2") do |config|
+  config.vm.define "eve-ng" do |eve|
+    eve.vm.box         = "eve-ng"
+    eve.vm.box_version = "0"
+    eve.vm.hostname    = "eve-ng"
+    eve.vm.network "private_network", ip: "192.168.56.55", netmask: "255.255.255.0", name: HOST_ONLY_NETWORK
+    eve.vm.network "forwarded_port", guest: 80, host: 8080
+
+    eve.vm.provider "virtualbox" do |vb|
+      vb.name = "poc-eve-ng"
+      vb.memory = 16384
+      vb.cpus = 4
+      vb.customize ["modifyvm", :id, "--nicpromisc2", "allow-all"]
+    end
+
+    eve.vm.provision "shell", privileged: true, inline: <<-SHELL
+      reboot
+    SHELL
+  end
+
+  config.vm.define "netbox" do |netbox|
+    netbox.vm.box      = "netbox"
+    netbox.vm.hostname = "netbox"
+    netbox.vm.network "private_network", ip: "192.168.56.65", netmask: "255.255.255.0", name: HOST_ONLY_NETWORK
+    netbox.vm.network "forwarded_port", guest: 8000, host: 8000
+
+    netbox.vm.provider "virtualbox" do |vb|
+      vb.name = "poc-netbox"
+      vb.memory = 8192
+      vb.cpus = 2
+    end
+  end
+
+  config.vm.define "ansible-awx" do |awx|
+    awx.vm.box      = "ansible-awx"
+    awx.vm.hostname = "ansible-awx"
+    awx.vm.network "private_network", ip: "192.168.56.60", netmask: "255.255.255.0", name: HOST_ONLY_NETWORK
+    awx.vm.network "forwarded_port", guest: 31362, host: 80
+
+    awx.vm.provider "virtualbox" do |vb|
+      vb.name = "poc-ansible-awx"
+      vb.memory = 4096
+      vb.cpus = 2
+    end
+
+    awx.vm.provision "shell", privileged: true, inline: <<-SHELL
+cat <<-EOF > /etc/netplan/50-vagrant.yaml
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s8:
+      addresses:
+        - 192.168.56.60/24
+      routes:
+        - to: 172.30.10.0/24
+          via: 192.168.56.70
+        - to: 172.30.20.0/24
+          via: 192.168.56.75
+EOF
+      chmod 600 /etc/netplan/50-vagrant.yaml
+      netplan apply
+    SHELL
+  end
+end
