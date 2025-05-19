@@ -1,7 +1,8 @@
 # bachproef-poc
 Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te reproduceren met behulp van VirtualBox en Vagrant op een Windows toestel.
 
-[<video src="demos/demo_install.mp4" width="640" height="480" controls></video>](https://hogent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8d95c9ec-224b-42be-87d5-b2e200c86f2b&start=0)
+[![watch](https://d2hpwsdp0ihr0w.cloudfront.net/sessions/86627570-2c88-4281-83f6-b2e200c86f21/ba350bc2-d932-4e0d-a7f4-b2e200c96c97_et/thumbs/slide2.jpg)](https://hogent.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8d95c9ec-224b-42be-87d5-b2e200c86f2b&start=0)
+
 
 # Installatie
 ## Prerequisites
