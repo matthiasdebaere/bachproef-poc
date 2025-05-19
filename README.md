@@ -1,6 +1,8 @@
 # bachproef-poc
 Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te reproduceren met behulp van VirtualBox en Vagrant op een Windows toestel.
 
+<video src="demos/demo_install.mp4" width="640" height="480" controls></video>
+
 # Installatie
 ## Prerequisites
 1. Schakel virtualisatie in via UEFI (BIOS).  
