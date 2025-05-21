@@ -14,6 +14,8 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 > Installeer niet de nieuwste versie (7.1), want deze is niet compatibel met Vagrant.
 
 1. Download en installeer [VirtualBox (versie 7.0.20)](https://www.virtualbox.org/wiki/Download_Old_Builds_7_0).
+2. Configureer de VirtualBox Host-Only Ethernet Adapter zoals in de onderstaande screenshot.
+![network_adapter](img/network_adapters.png)
 
 ## Vagrant
 1. Download en installeer [Vagrant](https://www.vagrantup.com/).
