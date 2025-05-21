@@ -17,7 +17,7 @@ Deze repository bevat alle benodigde bestanden om de PoC omgeving eenvoudig te r
 
 ## Vagrant
 1. Download en installeer [Vagrant](https://www.vagrantup.com/).
-2. Download de [Vagrant Boxes](https://filesender.belnet.be/?s=download&token=8a81cc50-ef70-4c5d-ab97-7c3815056656) en voer `install.ps1` uit.
+2. Download de [Vagrant Boxes](https://filesender.belnet.be/?s=download&token=b9efe7d2-ffe9-499d-9341-b070eec907f2) en voer `install.ps1` uit.
 3. Clone de repository `https://github.com/matthiasdebaere/bachproef-poc.git`.
 4. Navigeer naar `bachproef-poc/src/` en open een terminal.
 5. Voer `vagrant up --no-parallel` uit.
